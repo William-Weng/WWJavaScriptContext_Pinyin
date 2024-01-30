@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWJavaScriptContext_Pinyin",
       "state" : {
-        "branch" : "main",
-        "revision" : "e0a6f2c612b3712e707f6aa305ef92b9bae286e6"
+        "revision" : "73fec6c8e8ef416eb6b24ecc6da1a033a991f0c9",
+        "version" : "1.0.0"
       }
     },
     {
