@@ -27,7 +27,7 @@ private extension ViewController {
     /// - Parameter source: String
     func pinyinTest(source: String) {
         
-        guard let value = WWJavaScriptContext.Pinyin.shared.convertHTML(source: text, outputType: .text, toneType: .general),
+        guard let value = WWJavaScriptContext.Pinyin.shared.convertText(text, outputType: .text, toneType: .general),
               let pinyinText = value.toString()
         else {
             return

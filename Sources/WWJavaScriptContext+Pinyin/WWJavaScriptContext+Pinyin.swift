@@ -42,11 +42,11 @@ public extension WWJavaScriptContext.Pinyin {
     
     /// [中文字 => 漢語拼音](https://unpkg.com/browse/pinyin-pro@3.19.3/dist/index.js)
     /// - Parameters:
-    ///   - source: String
+    ///   - text: String
     ///   - outputType: 輸出文字類型 (文字 / 陣列)
     ///   - toneType: 聲調形式 (一般型 / 沒有聲調 / 數字型)
     /// - Returns: JSValue?
-    func convertHTML(source: String, outputType: OutputType = .text, toneType: ToneType = .general) -> JSValue? {
+    func convertText(_ text: String, outputType: OutputType = .text, toneType: ToneType = .general) -> JSValue? {
         
         guard let context = context,
               let script = readScript(with: "jsSource.js")
@@ -55,7 +55,7 @@ public extension WWJavaScriptContext.Pinyin {
         }
         
         _ = context.evaluateScript(script)
-        return context.callFunctionName("convertPinyin", arguments: [source, outputType.rawValue, toneType.rawValue])
+        return context.callFunctionName("convertPinyin", arguments: [text, outputType.rawValue, toneType.rawValue])
     }
 }
 
