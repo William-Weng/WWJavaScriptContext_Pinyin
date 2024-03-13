@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/William-Weng/WWJavaScriptContext", from: "1.0.1"),
     ],
     targets: [
-        .target(name: "WWJavaScriptContext+Pinyin", dependencies: ["WWJavaScriptContext"], resources: [.process("Script")]),
+        .target(name: "WWJavaScriptContext+Pinyin", dependencies: ["WWJavaScriptContext"], resources: [.process("Script"), .copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5

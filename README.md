@@ -14,6 +14,11 @@ dependencies: [
 ]
 ```
 
+### Function - 可用函式
+|函式|功能|
+|-|-|
+|convertText(_:outputType:toneType:)|中文字 => 漢語拼音|
+
 ### Example
 ```swift
 import UIKit
