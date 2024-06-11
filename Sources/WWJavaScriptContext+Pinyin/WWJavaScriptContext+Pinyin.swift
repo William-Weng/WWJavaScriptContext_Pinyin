@@ -7,7 +7,7 @@ extension WWJavaScriptContext {
     
     open class Pinyin: NSObject {
         
-        public static let shared = Pinyin(filename: "PinyinPro-3.19.3.js")
+        public static let shared = Pinyin(filename: "PinyinPro-3.22.0.js")
         
         var context: WWJavaScriptContext?
         
