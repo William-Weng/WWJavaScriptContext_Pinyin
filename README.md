@@ -17,7 +17,7 @@ dependencies: [
 ### Function - 可用函式
 |函式|功能|
 |-|-|
-|convertText(_:outputType:toneType:)|中文字 => 漢語拼音|
+|convert(text:outputType:toneType:)|中文字 => 漢語拼音|
 
 ### Example
 ```swift
@@ -43,7 +43,7 @@ private extension ViewController {
     /// - Parameter source: String
     func pinyinTest(source: String) {
         
-        guard let value = WWJavaScriptContext.Pinyin.shared.convertText(text, outputType: .text, toneType: .general),
+        guard let value = WWJavaScriptContext.Pinyin.shared.convert(text: text, outputType: .text, toneType: .general),
               let pinyinText = value.toString()
         else {
             return

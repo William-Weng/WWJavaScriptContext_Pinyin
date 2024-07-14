@@ -46,7 +46,7 @@ public extension WWJavaScriptContext.Pinyin {
     ///   - outputType: 輸出文字類型 (文字 / 陣列)
     ///   - toneType: 聲調形式 (一般型 / 沒有聲調 / 數字型)
     /// - Returns: JSValue?
-    func convertText(_ text: String, outputType: OutputType = .text, toneType: ToneType = .general) -> JSValue? {
+    func convert(text: String, outputType: OutputType = .text, toneType: ToneType = .general) -> JSValue? {
         
         guard let context = context,
               let script = readScript(with: "jsSource.js")
