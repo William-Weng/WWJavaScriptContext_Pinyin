@@ -22,34 +22,33 @@ dependencies: [
 ### Example
 ```swift
 import UIKit
-import WWPrint
 import WWJavaScriptContext
 import WWJavaScriptContext_Pinyin
 
 final class ViewController: UIViewController {
 
-    private let text = "漢語拼音測試" // hàn yǔ pīn yīn cè shì
-    
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var pinyinLabel: UILabel!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        pinyinTest(source: text)
+        pinyinTest(text: textLabel.text)
     }
 }
 
 // MARK: - 小工具
 private extension ViewController {
     
-    /// 拼音測試
-    /// - Parameter source: String
-    func pinyinTest(source: String) {
+    func pinyinTest(text: String?) {
         
-        guard let value = WWJavaScriptContext.Pinyin.shared.convert(text: text, outputType: .text, toneType: .general),
+        guard let text = text,
+              let value = WWJavaScriptContext.Pinyin.shared.convert(text: text, outputType: .text, toneType: .general),
               let pinyinText = value.toString()
         else {
             return
         }
         
-        wwPrint("\(text) => \(pinyinText)")
+        pinyinLabel.text = pinyinText
     }
 }
 ```
