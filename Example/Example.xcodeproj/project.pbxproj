@@ -12,11 +12,10 @@
 		3DBCD87B26F198EF00522E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87926F198EF00522E3B /* Main.storyboard */; };
 		3DBCD87D26F198F300522E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87C26F198F300522E3B /* Assets.xcassets */; };
 		3DBCD88026F198F300522E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBCD87E26F198F300522E3B /* LaunchScreen.storyboard */; };
-		643BCD9F2C43821500556483 /* WWJavaScriptContext+Pinyin in Frameworks */ = {isa = PBXBuildFile; productRef = 643BCD9E2C43821500556483 /* WWJavaScriptContext+Pinyin */; };
-		643BCDA22C43836300556483 /* WWJavaScriptContext+Pinyin in Frameworks */ = {isa = PBXBuildFile; productRef = 643BCDA12C43836300556483 /* WWJavaScriptContext+Pinyin */; };
+		3DD6F8C72D86C3EF00DA7CD9 /* WWJavaScriptContext+Pinyin in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD6F8C62D86C3EF00DA7CD9 /* WWJavaScriptContext+Pinyin */; };
+		3DD6F8CA2D86C49900DA7CD9 /* WWJavaScriptContext+Pinyin in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD6F8C92D86C49900DA7CD9 /* WWJavaScriptContext+Pinyin */; };
 		8130039027D5D18100436128 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130038F27D5D18100436128 /* Constant.swift */; };
 		8130039227D5D19000436128 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130039127D5D19000436128 /* Extension.swift */; };
-		81FCD40E2B68A3EA006197CF /* WWJavaScriptContext+Pinyin in Frameworks */ = {isa = PBXBuildFile; productRef = 81FCD40D2B68A3EA006197CF /* WWJavaScriptContext+Pinyin */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81FCD40E2B68A3EA006197CF /* WWJavaScriptContext+Pinyin in Frameworks */,
-				643BCDA22C43836300556483 /* WWJavaScriptContext+Pinyin in Frameworks */,
-				643BCD9F2C43821500556483 /* WWJavaScriptContext+Pinyin in Frameworks */,
+				3DD6F8CA2D86C49900DA7CD9 /* WWJavaScriptContext+Pinyin in Frameworks */,
+				3DD6F8C72D86C3EF00DA7CD9 /* WWJavaScriptContext+Pinyin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +139,8 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				81FCD40D2B68A3EA006197CF /* WWJavaScriptContext+Pinyin */,
-				643BCD9E2C43821500556483 /* WWJavaScriptContext+Pinyin */,
-				643BCDA12C43836300556483 /* WWJavaScriptContext+Pinyin */,
+				3DD6F8C62D86C3EF00DA7CD9 /* WWJavaScriptContext+Pinyin */,
+				3DD6F8C92D86C49900DA7CD9 /* WWJavaScriptContext+Pinyin */,
 			);
 			productName = Example;
 			productReference = 3DBCD87026F198EF00522E3B /* Example.app */;
@@ -174,7 +171,7 @@
 			);
 			mainGroup = 3DBCD86726F198EF00522E3B;
 			packageReferences = (
-				643BCDA02C43836300556483 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */,
+				3DD6F8C82D86C49900DA7CD9 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */,
 			);
 			productRefGroup = 3DBCD87126F198EF00522E3B /* Products */;
 			projectDirPath = "";
@@ -356,7 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q5CYDAG3B;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,6 +363,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -379,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q5CYDAG3B;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +387,7 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -418,28 +417,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		643BCDA02C43836300556483 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */ = {
+		3DD6F8C82D86C49900DA7CD9 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWJavaScriptContext_Pinyin";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		643BCD9E2C43821500556483 /* WWJavaScriptContext+Pinyin */ = {
+		3DD6F8C62D86C3EF00DA7CD9 /* WWJavaScriptContext+Pinyin */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "WWJavaScriptContext+Pinyin";
 		};
-		643BCDA12C43836300556483 /* WWJavaScriptContext+Pinyin */ = {
+		3DD6F8C92D86C49900DA7CD9 /* WWJavaScriptContext+Pinyin */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 643BCDA02C43836300556483 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */;
-			productName = "WWJavaScriptContext+Pinyin";
-		};
-		81FCD40D2B68A3EA006197CF /* WWJavaScriptContext+Pinyin */ = {
-			isa = XCSwiftPackageProductDependency;
+			package = 3DD6F8C82D86C49900DA7CD9 /* XCRemoteSwiftPackageReference "WWJavaScriptContext_Pinyin" */;
 			productName = "WWJavaScriptContext+Pinyin";
 		};
 /* End XCSwiftPackageProductDependency section */
